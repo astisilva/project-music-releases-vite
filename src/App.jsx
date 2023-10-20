@@ -1,7 +1,19 @@
+import { Header } from "./Header";
+import { Album } from './Album'
+
 import data from "./data.json";
 
 console.log(data);
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  console.log(data)
+  return (
+    <div>
+      <Header />
+      <div> {data.albums.items.map((album) => (
+        <Album key={album.id} album={album} />
+      ))}
+      </div>
+    </div>
+  )
 };
