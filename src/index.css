@@ -29,7 +29,7 @@ justify-content: center;
   position: relative;
   display: inline-block;
   margin: 50px;
-  
+
 }
 
 .album-name {
@@ -37,10 +37,15 @@ justify-content: center;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
   text-decoration: none; 
+ 
+
 }
+
 
 .album-name:hover,.artist-name:hover {
   text-decoration: underline;
+
+   
 }
 
 
@@ -49,15 +54,13 @@ justify-content: center;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
   text-decoration: none;
-  
+
 }
-/* .text-info-container{
-  position: absolute;
-  z-index: 1;
-} */
+
 
 a {
   text-decoration: none;
+  
 }
 
 
@@ -69,11 +72,18 @@ a {
   transform: translate(-50%, -50%);
   gap: 10px;
   display: none;
+ 
  }
 
 .album:hover .album-buttons {
   display: flex;
+ 
+}
 
+
+.album:hover .cover-images > img {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 
@@ -81,24 +91,22 @@ a {
 /* Ensure the cover image doesn't get affected by hover */
 .album:hover .cover-images > img {
   filter: brightness(0.5);
+
+
 }
 
 /* Ensure the album buttons don't affect the cover image brightness on hover */
 .album-buttons:hover ~ .cover-images > img {
   filter: brightness(1);
+
 }
-  
-/* .cover-images {
-  position: relative;
-  overflow: hidden;
- 
-} */
+
 
 .cover-image {
   width: 100%;
   height: auto; 
   display: block;
- 
+  
 }
 
   .svg-button {
@@ -107,7 +115,7 @@ a {
     padding: 0;
     margin: 0;
   
-    }
+ }
   
   
   .svg-icon {
@@ -122,6 +130,4 @@ a {
     transition: transform 0.2s ease-in-out; 
   
   }
-  
-  
   

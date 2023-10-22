@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+- Create a React app that displays music releases using Spotify API data from a JSON file.
 
 ## Getting Started with the Project
 
@@ -24,11 +22,15 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+- I began the project by carefully reading the requirements to understand what was needed. To get a clearer picture, I sketched out the main components of the project. Whenever I got stuck or needed explanations, I used Google and ChatGPT.
+
+-The main part of the project was using React to create different pieces that fit together. It took a while because some parts I had forgot, but ChatGPT explained things and made it clearer. This project helped me practice what I already knew and learn some new things.
+
+- If I hade more time I would have done the stretch goals 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+- https://glittering-moonbeam-213d93.netlify.app/
 
 ## Instructions
 
