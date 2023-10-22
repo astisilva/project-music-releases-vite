@@ -1,8 +1,9 @@
 import React from 'react'
-import './Header.css'
+import './index.css';
+import music from './assets/music-releases.svg'
 
 export const Header = () => {
   return (
-    <div className='header'>This is the Header of Music releases</div>
+    <div className='header'><h2>Music releases</h2></div>
   )
 }

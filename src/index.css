@@ -11,3 +11,117 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+body{
+  background-color: black;
+}
+
+
+.header {
+  display: flex;
+justify-content: center;
+  color: white;
+}
+
+
+.album {
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  
+}
+
+.album-name {
+  color:  #ffffff;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none; 
+}
+
+.album-name:hover,.artist-name:hover {
+  text-decoration: underline;
+}
+
+
+.artist-name {
+  color: #a0a0a0;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  
+}
+/* .text-info-container{
+  position: absolute;
+  z-index: 1;
+} */
+
+a {
+  text-decoration: none;
+}
+
+
+.album-buttons {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+  display: none;
+ }
+
+.album:hover .album-buttons {
+  display: flex;
+
+}
+
+
+
+/* Ensure the cover image doesn't get affected by hover */
+.album:hover .cover-images > img {
+  filter: brightness(0.5);
+}
+
+/* Ensure the album buttons don't affect the cover image brightness on hover */
+.album-buttons:hover ~ .cover-images > img {
+  filter: brightness(1);
+}
+  
+/* .cover-images {
+  position: relative;
+  overflow: hidden;
+ 
+} */
+
+.cover-image {
+  width: 100%;
+  height: auto; 
+  display: block;
+ 
+}
+
+  .svg-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  
+    }
+  
+  
+  .svg-icon {
+    width: 30px;
+    height: 30px; 
+     
+  }
+  
+  
+  .svg-button:hover {
+    transform: scale(1.5); 
+    transition: transform 0.2s ease-in-out; 
+  
+  }
+  
+  
+  

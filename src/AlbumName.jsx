@@ -1,7 +1,10 @@
 import React from 'react'
+import './index.css';
 
 export const AlbumName = ({ name }) => {
   return (
-    <div>AlbumName:{name}</div>
+    <div className='album-name'>
+      {name}
+    </div>
   )
 }
