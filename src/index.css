@@ -124,4 +124,28 @@ a {
 
 }
 
+/* ------------------------------------------Media query-------------------------------------------------------- */
 
+
+/* tablets */
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin: 20px; 
+  }
+
+  .album {
+    width: 48%; 
+  }
+}
+
+/* desktops */
+@media screen and (min-width: 769px) {
+  .wrapper {
+    margin: 20px;
+  }
+
+  .album {
+    width: 70%; 
+  }
+}
