@@ -24,15 +24,19 @@ body {
   color: white;
 }
 
-.wrapper {
-  display: inline-block;
-  margin: 50px;
+.albums{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
 }
+
+
 
 .album {
   position: relative;
   display: inline-block;
-
+  justify-content: center;
 
 }
 
@@ -97,7 +101,7 @@ a {
 .cover-image {
   width: 100%;
   height: auto;
-  display: block;
+/*  display: block;  */
 
 
 }
@@ -124,28 +128,41 @@ a {
 
 }
 
+
+
+.wrapper {
+  margin: 20px;
+  width: 20vw;
+}
+
+
+
+
 /* ------------------------------------------Media query-------------------------------------------------------- */
 
-
-/* tablets */
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 864px) and (max-width: 879px) {
   .wrapper {
-    margin: 20px; 
-  }
-
-  .album {
-    width: 48%; 
+   width: 18vw;
+ 
   }
 }
 
-/* desktops */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 863px) {
   .wrapper {
-    margin: 20px;
+   width: 15vw;
+ 
   }
+}
 
-  .album {
-    width: 70%; 
+@media screen and (max-width: 768px) {
+  .wrapper {
+   width: 30vw;
+ 
   }
+}
+
+@media screen and (max-width: 480px) {
+ .wrapper{
+  width: 60vw;
+ }
 }
