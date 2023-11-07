@@ -101,8 +101,6 @@ a {
 .cover-image {
   width: 100%;
   height: auto;
-/*  display: block;  */
-
 
 }
 
@@ -138,7 +136,7 @@ a {
 
 
 
-/* ------------------------------------------Media query-------------------------------------------------------- */
+/* ------------------------------Media query--------------------------- */
 
 @media screen and (min-width: 864px) and (max-width: 879px) {
   .wrapper {
